@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "157032106749",
+    "project_id": "the-setar",
+    "storage_bucket": "the-setar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157032106749:android:8f411708587250303ccc94",
+        "android_client_info": {
+          "package_name": "com.example.the_setar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157032106749-0clo3bmsu8seup8hledaa7g8th39jpas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQiT36kmDz0bOZFepSwM4w9JAZHklvmMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157032106749-0clo3bmsu8seup8hledaa7g8th39jpas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
