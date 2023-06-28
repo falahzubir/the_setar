@@ -1,2 +1,2 @@
-# the_setar
- SETAR Apps for Kedah project
+# The SETAR
+ SETAR mobile apps for Kedah project.
