@@ -33,9 +33,9 @@ class InfraPage extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: const Column(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Text(
                     "INFRASTRUCTURE & UTILITIES",
                     style: TextStyle(
@@ -99,9 +99,9 @@ class InfraPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "MySmart",
                           style: TextStyle(
@@ -146,9 +146,9 @@ class InfraPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "MySmart",
                           style: TextStyle(
@@ -193,9 +193,9 @@ class InfraPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "MySmart",
                           style: TextStyle(
@@ -247,9 +247,9 @@ class InfraPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "Always Stay Connected",
                           style: TextStyle(

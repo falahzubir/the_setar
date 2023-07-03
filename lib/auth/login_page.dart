@@ -112,6 +112,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     );
                   }).onError((error, stackTrace) {
+                    // ignore: avoid_print
                     print("Error ${error.toString()}");
                   });
                 },

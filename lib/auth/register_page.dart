@@ -1,8 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:firebase_auth/firebase_auth.dart';
-// ignore: unused_import
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import '../screens/welcome_screen.dart';
@@ -147,6 +145,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       password: password,
                     )
                         .then((value) {
+                      // ignore: avoid_print
                       print("Created new account");
                       Navigator.push(
                           context,

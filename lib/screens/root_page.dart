@@ -142,6 +142,7 @@ class NavigationDrawer extends StatelessWidget {
               onTap: () {
                 FirebaseAuth.instance.signOut().then(
                   (value) {
+                    // ignore: avoid_print
                     print("You have sign out");
                     Navigator.push(
                       context,

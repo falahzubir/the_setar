@@ -35,9 +35,9 @@ class SetarPage extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: const Column(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Text(
                     "SETAR TOURIST TRAILS",
                     style: TextStyle(
@@ -102,9 +102,9 @@ class SetarPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "The Heritage Trail",
                           style: TextStyle(
@@ -150,9 +150,9 @@ class SetarPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "The Food Trail",
                           style: TextStyle(
@@ -195,9 +195,9 @@ class SetarPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "The Travel Inn",
                           style: TextStyle(
@@ -234,9 +234,9 @@ class SetarPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "The Peace Of Art",
                           style: TextStyle(
@@ -279,9 +279,9 @@ class SetarPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "The Promotion Zone",
                           style: TextStyle(
@@ -318,9 +318,9 @@ class SetarPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: const Column(
+                    child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Text(
                           "Easy & Safe Tourism",
                           style: TextStyle(

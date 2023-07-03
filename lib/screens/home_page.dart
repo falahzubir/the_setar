@@ -36,8 +36,8 @@ class HomePage extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(top: 40),
                   alignment: Alignment.topCenter,
-                  child: const Column(
-                    children: [
+                  child: Column(
+                    children: const [
                       Text(
                         "Welcome",
                         style: TextStyle(
@@ -125,9 +125,9 @@ class HomePage extends StatelessWidget {
                                   fit: BoxFit.cover,
                                 ),
                               ),
-                              child: const Column(
+                              child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   // Image(
                                   //   width: 140,
                                   //   image: AssetImage("assets/h1.png"),
@@ -179,9 +179,9 @@ class HomePage extends StatelessWidget {
                                   fit: BoxFit.cover,
                                 ),
                               ),
-                              child: const Column(
+                              child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Text(
                                     "INFRASTRUCTURE & UTILITIES",
                                     style: TextStyle(
@@ -229,9 +229,9 @@ class HomePage extends StatelessWidget {
                                   fit: BoxFit.cover,
                                 ),
                               ),
-                              child: const Column(
+                              child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Text(
                                     "SMART MOBILITY",
                                     style: TextStyle(
@@ -279,9 +279,9 @@ class HomePage extends StatelessWidget {
                                   fit: BoxFit.cover,
                                 ),
                               ),
-                              child: const Column(
+                              child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Text(
                                     "SMART LAND",
                                     style: TextStyle(
