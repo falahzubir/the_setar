@@ -6,6 +6,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:the_setar/screens/infra/infra_page.dart';
 import 'package:the_setar/screens/land/smart_land_page.dart';
 import 'package:the_setar/screens/mobility/smart_mobility_page.dart';
+import 'package:the_setar/screens/setar/food_page.dart';
 import 'package:the_setar/screens/setar/setar_tourist_trail_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -18,297 +19,349 @@ class HomePage extends StatelessWidget {
     return WillPopScope(
       onWillPop: () => _onBackButtonPressed(context),
       child: Scaffold(
-        body: Stack(
+        body: Column(
           children: [
-            Stack(
-              children: [
-                Container(
-                  height: size.height * .3,
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      alignment: Alignment.topCenter,
-                      image: AssetImage("assets/header.png"),
-                    ),
-                  ),
-                ),
+            // Spacing
+            const SizedBox(height: 40),
 
-                // Welcome text
-                Container(
-                  padding: const EdgeInsets.only(top: 40),
-                  alignment: Alignment.topCenter,
-                  child: Column(
-                    children: const [
-                      Text(
-                        "Welcome",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+            // Categories
+            Container(
+              margin: const EdgeInsets.only(left: 25),
+              child: const Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "Categories",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black54),
+                ),
+              ),
+            ),
+
+            // Spacing
+            const SizedBox(height: 15),
+
+            // List of features
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  // Left spacing
+                  const SizedBox(width: 20),
+
+                  // Setar Tourist Trails
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return const SetarPage();
+                          },
+                        ),
+                      );
+                    },
+                    child: Container(
+                      height: 340,
+                      width: 240,
+                      alignment: const Alignment(0, 0),
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.4),
+                            blurRadius: 10,
+                            offset: Offset(0, 4),
+                          ),
+                        ],
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                            Colors.black.withOpacity(0.5),
+                            BlendMode.multiply,
+                          ),
+                          image:
+                              const AssetImage("assets/bandar-alor-setar.jpg"),
+                          fit: BoxFit.cover,
                         ),
                       ),
-                      Text(
-                        "falah@gmail.com",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-
-                // List of features
-                Container(
-                  padding: const EdgeInsets.only(top: 210),
-                  child: SingleChildScrollView(
-                    child: Center(
                       child: Column(
-                        children: [
-                          // Logout button
-                          // Container(
-                          //   child: ElevatedButton(
-                          //     child: const Text("Logout"),
-                          //     onPressed: () {
-                          //       FirebaseAuth.instance.signOut().then((value) {
-                          //         print("You have sign out");
-                          //         Navigator.push(
-                          //             context,
-                          //             MaterialPageRoute(
-                          //                 builder: (context) => const LoginPage()));
-                          //       });
-                          //     },
-                          //   ),
-                          // ),
-
-                          // Spacing
-                          // SizedBox(height: 90),
-                          // Container(
-                          //   child: const Column(
-                          //     children: [
-                          //       Text(
-                          //         "Welcome!",
-                          //         style: TextStyle(
-                          //           fontWeight: FontWeight.bold,
-                          //           fontSize: 24,
-                          //           color: Colors.white,
-                          //         ),
-                          //       ),
-                          //     ],
-                          //   ),
-                          // ),
-
-                          // Setar Tourist Trails
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (BuildContext context) {
-                                    return const SetarPage();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Container(
-                              height: 220,
-                              width: 390,
-                              alignment: const Alignment(0, 0),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                image: DecorationImage(
-                                  colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.5),
-                                    BlendMode.multiply,
-                                  ),
-                                  image: const AssetImage(
-                                      "assets/bandar-alor-setar.jpg"),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: const [
-                                  // Image(
-                                  //   width: 140,
-                                  //   image: AssetImage("assets/h1.png"),
-                                  // ),
-                                  Text(
-                                    "SETAR TOURIST TRAILS",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  Text(
-                                    "ESCAPE, TRESURE, HOLIDAY, ENJOY",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 10,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Image(
+                            width: 140,
+                            image: AssetImage("assets/h1.png"),
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            "SETAR TOURIST TRAILS",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
                             ),
-                          ).animate().fade(delay: 450.ms).slideY(),
-                          const SizedBox(height: 10),
-
-                          // Infrastructure & Utilities
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (BuildContext context) {
-                                    return const InfraPage();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Container(
-                              height: 220,
-                              width: 390,
-                              alignment: const Alignment(0, 0),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                image: DecorationImage(
-                                  colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.5),
-                                    BlendMode.multiply,
-                                  ),
-                                  image: const AssetImage("assets/infra.jpg"),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: const [
-                                  Text(
-                                    "INFRASTRUCTURE & UTILITIES",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  Text(
-                                    "SAFETY, CLEAN, GROWTH",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 10,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                          ),
+                          Text(
+                            "ESCAPE, TRESURE, HOLIDAY, ENJOY",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
                             ),
-                          ).animate().fade(delay: 550.ms).slideY(),
-                          const SizedBox(height: 10),
-
-                          // Smart Mobility
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (BuildContext context) {
-                                    return const MobilPage();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Container(
-                              height: 220,
-                              width: 390,
-                              alignment: const Alignment(0, 0),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                image: DecorationImage(
-                                  colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.5),
-                                    BlendMode.multiply,
-                                  ),
-                                  image: const AssetImage("assets/scooter.jpg"),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: const [
-                                  Text(
-                                    "SMART MOBILITY",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  Text(
-                                    "CONNECTED, AFFORDABLE, FAST",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 10,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ).animate().fade(delay: 650.ms).slideY(),
-                          const SizedBox(height: 10),
-
-                          // Smart Land
-                          GestureDetector(
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (BuildContext context) {
-                                    return const LandPage();
-                                  },
-                                ),
-                              );
-                            },
-                            child: Container(
-                              height: 220,
-                              width: 390,
-                              alignment: const Alignment(0, 0),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
-                                image: DecorationImage(
-                                  colorFilter: ColorFilter.mode(
-                                    Colors.black.withOpacity(0.5),
-                                    BlendMode.multiply,
-                                  ),
-                                  image: const AssetImage("assets/map.png"),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: const [
-                                  Text(
-                                    "SMART LAND",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  Text(
-                                    "EXPLORE, IDENTIFIED",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 10,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ).animate().fade(delay: 750.ms).slideY(),
-                          const SizedBox(height: 100),
+                          ),
                         ],
                       ),
                     ),
+                  ).animate().fade(delay: 450.ms).slideX(),
+
+                  // Right spacing
+                  const SizedBox(width: 15),
+
+                  // Infrastructure & Utilities
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return const InfraPage();
+                          },
+                        ),
+                      );
+                    },
+                    child: Container(
+                      height: 340,
+                      width: 240,
+                      alignment: const Alignment(0, 0),
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.4),
+                            blurRadius: 10,
+                            offset: Offset(0, 4),
+                          ),
+                        ],
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                            Colors.black.withOpacity(0.5),
+                            BlendMode.multiply,
+                          ),
+                          image: const AssetImage("assets/infra.jpg"),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Image(
+                            width: 140,
+                            image: AssetImage("assets/h2.png"),
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            "INFRASTRUCTURE & UTILITIES",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Text(
+                            "SAFETY, CLEAN, GROWTH",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ).animate().fade(delay: 550.ms).slideX(),
+
+                  // Right spacing
+                  const SizedBox(width: 15),
+
+                  // Smart Mobility
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return const MobilPage();
+                          },
+                        ),
+                      );
+                    },
+                    child: Container(
+                      height: 340,
+                      width: 240,
+                      alignment: const Alignment(0, 0),
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.4),
+                            blurRadius: 10,
+                            offset: Offset(0, 4),
+                          ),
+                        ],
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                            Colors.black.withOpacity(0.5),
+                            BlendMode.multiply,
+                          ),
+                          image: const AssetImage("assets/scooter.jpg"),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Image(
+                            width: 140,
+                            image: AssetImage("assets/h3.png"),
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            "SMART MOBILITY",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Text(
+                            "CONNECTED, AFFORDABLE, FAST",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ).animate().fade(delay: 650.ms).slideX(),
+
+                  // Right spacing
+                  const SizedBox(width: 15),
+
+                  // Smart Land
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return const LandPage();
+                          },
+                        ),
+                      );
+                    },
+                    child: Container(
+                      height: 340,
+                      width: 240,
+                      alignment: const Alignment(0, 0),
+                      decoration: BoxDecoration(
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.4),
+                            blurRadius: 10,
+                            offset: Offset(0, 4),
+                          ),
+                        ],
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                          colorFilter: ColorFilter.mode(
+                            Colors.black.withOpacity(0.5),
+                            BlendMode.multiply,
+                          ),
+                          image: const AssetImage("assets/map.png"),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Image(
+                            width: 140,
+                            image: AssetImage("assets/h4.png"),
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            "SMART LAND",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Text(
+                            "EXPLORE, IDENTIFIED",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ).animate().fade(delay: 750.ms).slideX(),
+
+                  //Right spacing
+                  const SizedBox(width: 20),
+                ],
+              ),
+            ),
+
+            // Spacing
+            const SizedBox(height: 40),
+
+            // Recommended Text
+            Container(
+              margin: const EdgeInsets.only(left: 25),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "Recommended",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black54),
+                ),
+              ),
+            ),
+
+            // Spacing
+            const SizedBox(height: 15),
+
+            // Recommended
+            GestureDetector(
+              onTap: () {
+                // Navigator.of(context).push(
+                //   MaterialPageRoute(
+                //     builder: (BuildContext context) {
+                //       return const FoodPage();
+                //     },
+                //   ),
+                // );
+              },
+              child: Container(
+                height: 200,
+                width: 400,
+                alignment: const Alignment(0, 0),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.4),
+                      blurRadius: 10,
+                      offset: Offset(0, 2),
+                    ),
+                  ],
+                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                    image: const AssetImage("assets/ads.png"),
+                    fit: BoxFit.cover,
                   ),
                 ),
-              ],
-            ),
+              ),
+            ).animate().fade(delay: 450.ms).slideX(),
           ],
         ),
       ),
