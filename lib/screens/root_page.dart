@@ -15,24 +15,76 @@ class RootPage extends StatefulWidget {
 }
 
 class _RootPageState extends State<RootPage> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+  void openMenu() {
+    _scaffoldKey.currentState?.openDrawer();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: IconButton(
-            icon: Icon(
-              Icons.menu_rounded,
-              color: Colors.black45,
-              size: 30,
+      key: _scaffoldKey,
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(100),
+        child: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          leading: Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: IconButton(
+              icon: const Icon(
+                Icons.menu_rounded,
+                color: Colors.black45,
+                size: 35,
+              ),
+              onPressed: openMenu,
             ),
-            onPressed: () {},
           ),
         ),
       ),
+
+      // Drawer untuk side bar
+      drawer: Drawer(
+        // Add your side bar content here
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                image: DecorationImage(
+                  image: AssetImage("assets/bg1.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: Text(
+                'Side Bar',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Home'),
+              onTap: () {
+                // Handle side bar item 1 press
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text('Favourite'),
+              onTap: () {
+                // Handle side bar item 2 press
+              },
+            ),
+          ],
+        ),
+      ),
+
+      // Paparkan homepage
       body: HomePage(),
     );
   }

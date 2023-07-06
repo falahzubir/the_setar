@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
         body: Column(
           children: [
             // Spacing
-            const SizedBox(height: 40),
+            const SizedBox(height: 10),
 
             // Categories
             Container(
