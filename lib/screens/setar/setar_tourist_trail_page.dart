@@ -38,6 +38,10 @@ class SetarPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
+                  Image(
+                    width: 140,
+                    image: AssetImage("assets/h1.png"),
+                  ),
                   Text(
                     "SETAR TOURIST TRAILS",
                     style: TextStyle(

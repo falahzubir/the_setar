@@ -101,20 +101,27 @@ class _LoginPageState extends State<LoginPage> {
               // Sign in button
               GestureDetector(
                 onTap: () {
-                  FirebaseAuth.instance
-                      .signInWithEmailAndPassword(
-                          email: email, password: password)
-                      .then((value) {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => WelcomeScreen(),
-                      ),
-                    );
-                  }).onError((error, stackTrace) {
-                    // ignore: avoid_print
-                    print("Error ${error.toString()}");
-                  });
+                  // FirebaseAuth.instance
+                  //     .signInWithEmailAndPassword(
+                  //         email: email, password: password)
+                  //     .then((value) {
+                  //   Navigator.push(
+                  //     context,
+                  //     MaterialPageRoute(
+                  //       builder: (context) => WelcomeScreen(),
+                  //     ),
+                  //   );
+                  // }).onError((error, stackTrace) {
+                  //   // ignore: avoid_print
+                  //   print("Error ${error.toString()}");
+                  // });
+
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => WelcomeScreen(),
+                    ),
+                  );
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
