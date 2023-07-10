@@ -6,7 +6,6 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:the_setar/screens/infra/infra_page.dart';
 import 'package:the_setar/screens/land/smart_land_page.dart';
 import 'package:the_setar/screens/mobility/smart_mobility_page.dart';
-import 'package:the_setar/screens/setar/food_page.dart';
 import 'package:the_setar/screens/setar/setar_tourist_trail_page.dart';
 
 import '../components/colors.dart';
@@ -16,7 +15,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
+    // var size = MediaQuery.of(context).size;
 
     return WillPopScope(
       onWillPop: () => _onBackButtonPressed(context),
@@ -73,7 +72,7 @@ class HomePage extends StatelessWidget {
                           BoxShadow(
                             color: Colors.black.withOpacity(0.4),
                             blurRadius: 10,
-                            offset: Offset(0, 4),
+                            offset: const Offset(0, 4),
                           ),
                         ],
                         borderRadius: BorderRadius.circular(20),
@@ -138,7 +137,7 @@ class HomePage extends StatelessWidget {
                           BoxShadow(
                             color: Colors.black.withOpacity(0.4),
                             blurRadius: 10,
-                            offset: Offset(0, 4),
+                            offset: const Offset(0, 4),
                           ),
                         ],
                         borderRadius: BorderRadius.circular(20),
@@ -202,7 +201,7 @@ class HomePage extends StatelessWidget {
                           BoxShadow(
                             color: Colors.black.withOpacity(0.4),
                             blurRadius: 10,
-                            offset: Offset(0, 4),
+                            offset: const Offset(0, 4),
                           ),
                         ],
                         borderRadius: BorderRadius.circular(20),
@@ -266,7 +265,7 @@ class HomePage extends StatelessWidget {
                           BoxShadow(
                             color: Colors.black.withOpacity(0.4),
                             blurRadius: 10,
-                            offset: Offset(0, 4),
+                            offset: const Offset(0, 4),
                           ),
                         ],
                         borderRadius: BorderRadius.circular(20),
@@ -319,7 +318,7 @@ class HomePage extends StatelessWidget {
             // Recommended Text
             Container(
               margin: const EdgeInsets.only(left: 25),
-              child: Align(
+              child: const Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
                   "Recommended",
@@ -354,12 +353,12 @@ class HomePage extends StatelessWidget {
                     BoxShadow(
                       color: Colors.black.withOpacity(0.4),
                       blurRadius: 10,
-                      offset: Offset(0, 2),
+                      offset: const Offset(0, 2),
                     ),
                   ],
                   borderRadius: BorderRadius.circular(20),
-                  image: DecorationImage(
-                    image: const AssetImage("assets/ads.png"),
+                  image: const DecorationImage(
+                    image: AssetImage("assets/ads.png"),
                     fit: BoxFit.cover,
                   ),
                 ),

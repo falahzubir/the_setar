@@ -1,11 +1,6 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:the_setar/screens/home_page.dart';
-import 'package:the_setar/screens/wallet_page.dart';
-import 'package:the_setar/screens/profile_page.dart';
-import 'package:the_setar/screens/setar/heritage_page.dart';
 
-import '../auth/login_page.dart';
 import '../components/colors.dart';
 
 class RootPage extends StatefulWidget {
@@ -68,15 +63,15 @@ class _RootPageState extends State<RootPage> {
               ),
             ),
             ListTile(
-              leading: Icon(Icons.home),
-              title: Text('Home'),
+              leading: const Icon(Icons.home),
+              title: const Text('Home'),
               onTap: () {
                 // Handle side bar item 1 press
               },
             ),
             ListTile(
-              leading: Icon(Icons.favorite),
-              title: Text('Favourite'),
+              leading: const Icon(Icons.favorite),
+              title: const Text('Favourite'),
               onTap: () {
                 // Handle side bar item 2 press
               },
@@ -86,7 +81,7 @@ class _RootPageState extends State<RootPage> {
       ),
 
       // Paparkan homepage
-      body: HomePage(),
+      body: const HomePage(),
     );
   }
 }
