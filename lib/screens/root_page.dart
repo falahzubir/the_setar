@@ -6,6 +6,7 @@ import 'package:the_setar/screens/profile_page.dart';
 import 'package:the_setar/screens/setar/heritage_page.dart';
 
 import '../auth/login_page.dart';
+import '../components/colors.dart';
 
 class RootPage extends StatefulWidget {
   const RootPage({super.key});
@@ -28,7 +29,7 @@ class _RootPageState extends State<RootPage> {
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(100),
         child: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: CustomColors.secondary,
           elevation: 0,
           leading: Padding(
             padding: const EdgeInsets.all(15.0),

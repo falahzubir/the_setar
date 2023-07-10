@@ -9,6 +9,8 @@ import 'package:the_setar/screens/mobility/smart_mobility_page.dart';
 import 'package:the_setar/screens/setar/food_page.dart';
 import 'package:the_setar/screens/setar/setar_tourist_trail_page.dart';
 
+import '../components/colors.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -19,6 +21,7 @@ class HomePage extends StatelessWidget {
     return WillPopScope(
       onWillPop: () => _onBackButtonPressed(context),
       child: Scaffold(
+        backgroundColor: CustomColors.secondary,
         body: Column(
           children: [
             // Spacing
