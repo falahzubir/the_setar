@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_setar/components/colors.dart';
 
 class HistoricPage extends StatefulWidget {
   const HistoricPage({super.key});
@@ -40,12 +41,10 @@ class _HistoricPageState extends State<HistoricPage> {
           ),
           Positioned(
             child: Container(
-              padding: const EdgeInsets.all(20),
-              margin: EdgeInsets.only(top: height * .4),
-              height: height * .6,
+              height: height,
               width: width,
               decoration: const BoxDecoration(
-                color: Colors.white,
+                color: CustomColors.secondary,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
@@ -54,16 +53,16 @@ class _HistoricPageState extends State<HistoricPage> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 20),
 
                     // Alor Setar Tower
                     Container(
                       alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
+                      height: 150,
+                      width: 380,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
+                        color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
@@ -73,23 +72,44 @@ class _HistoricPageState extends State<HistoricPage> {
                           ),
                         ],
                       ),
-                      child: const Text(
-                        "Alor Setar Tower",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                      child: Row(
+                        children: [
+                          // Image
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                "assets/menara_alor_setar.jpg",
+                                width: 140,
+                                height: 140,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+
+                          const SizedBox(width: 40),
+
+                          // Nama tempat
+                          const Text(
+                            "Alor Setar Tower",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 20),
 
                     // Kedah State Museum
                     Container(
                       alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
+                      height: 150,
+                      width: 380,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
+                        color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
@@ -99,23 +119,44 @@ class _HistoricPageState extends State<HistoricPage> {
                           ),
                         ],
                       ),
-                      child: const Text(
-                        "Kedah State Museum",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                      child: Row(
+                        children: [
+                          // Image
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                "assets/muzium_kedah.jpg",
+                                width: 140,
+                                height: 140,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+
+                          const SizedBox(width: 40),
+
+                          // Nama tempat
+                          const Text(
+                            "Kedah State Museum",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 20),
 
                     // Masjid Al-Bukhary
                     Container(
                       alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
+                      height: 150,
+                      width: 380,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
+                        color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
@@ -125,23 +166,44 @@ class _HistoricPageState extends State<HistoricPage> {
                           ),
                         ],
                       ),
-                      child: const Text(
-                        "Masjid Al-Bukhary",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                      child: Row(
+                        children: [
+                          // Image
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                "assets/masjid_albukhary.jpg",
+                                width: 140,
+                                height: 140,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+
+                          const SizedBox(width: 40),
+
+                          // Nama tempat
+                          const Text(
+                            "Masjid Al-Bukhary",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 20),
 
                     // Rumah Tok Su
                     Container(
                       alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
+                      height: 150,
+                      width: 380,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
+                        color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
@@ -151,23 +213,44 @@ class _HistoricPageState extends State<HistoricPage> {
                           ),
                         ],
                       ),
-                      child: const Text(
-                        "Rumah Tok Su and Rumah Seri Banai",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
+                      child: Row(
+                        children: [
+                          // Image
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                "assets/rumah_toksu.jpg",
+                                width: 140,
+                                height: 140,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+
+                          const SizedBox(width: 40),
+
+                          // Nama tempat
+                          const Text(
+                            "Rumah Tok Su",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 20),
 
                     // Rumah Merdeka
                     Container(
                       alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
+                      height: 150,
+                      width: 380,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
+                        color: Colors.white,
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.withOpacity(0.3),
@@ -177,65 +260,35 @@ class _HistoricPageState extends State<HistoricPage> {
                           ),
                         ],
                       ),
-                      child: const Text(
-                        "Rumah Merdeka",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 10),
+                      child: Row(
+                        children: [
+                          // Image
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10.0),
+                              child: Image.asset(
+                                "assets/rumah_merdeka.jpg",
+                                width: 140,
+                                height: 140,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
 
-                    // Sultan Abdul Halim Mu'adzam Shah Gallery
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
-                          ),
-                        ],
-                      ),
-                      child: const Text(
-                        "Sultan Abdul Halim Mu'adzam Shah Gallery",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 10),
+                          const SizedBox(width: 40),
 
-                    // Balai Nobat
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                          // Nama tempat
+                          const Text(
+                            "Rumah Merdeka",
+                            style: TextStyle(
+                              color: Colors.black,
+                            ),
                           ),
                         ],
                       ),
-                      child: const Text(
-                        "Balai Nobat",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
                     ),
+                    const SizedBox(height: 20),
                   ],
                 ),
               ),

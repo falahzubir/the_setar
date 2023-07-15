@@ -49,9 +49,9 @@ class HeritagePage extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text(
                         "Historical & Cultural Tourism",
                         style: TextStyle(
@@ -90,9 +90,9 @@ class HeritagePage extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text(
                         "Shopping Place",
                         style: TextStyle(
@@ -131,9 +131,9 @@ class HeritagePage extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text(
                         "Recreation Tourism",
                         style: TextStyle(
@@ -172,9 +172,9 @@ class HeritagePage extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  child: Column(
+                  child: const Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text(
                         "All Best Place Map Guide “The SETAR”",
                         style: TextStyle(

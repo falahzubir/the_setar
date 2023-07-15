@@ -33,9 +33,9 @@ class MobilPage extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     "SMART MOBILITY",
                     style: TextStyle(
@@ -99,9 +99,9 @@ class MobilPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "MyTrack",
                           style: TextStyle(
@@ -154,9 +154,9 @@ class MobilPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "MyEV",
                           style: TextStyle(
@@ -209,9 +209,9 @@ class MobilPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "Smart Move",
                           style: TextStyle(
@@ -255,9 +255,9 @@ class MobilPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "Fast, Reliable, Affordable Transportation",
                           style: TextStyle(

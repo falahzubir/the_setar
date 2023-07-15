@@ -33,9 +33,9 @@ class LandPage extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     "SMART LAND",
                     style: TextStyle(
@@ -99,9 +99,9 @@ class LandPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "Landuse",
                           style: TextStyle(
@@ -138,9 +138,9 @@ class LandPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "Street View",
                           style: TextStyle(
@@ -177,9 +177,9 @@ class LandPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "Elevation",
                           style: TextStyle(
@@ -223,9 +223,9 @@ class LandPage extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "Lot Finder",
                           style: TextStyle(

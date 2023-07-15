@@ -43,22 +43,27 @@ class _RootPageState extends State<RootPage> {
       // Drawer untuk side bar
       drawer: Drawer(
         // Add your side bar content here
+        backgroundColor: CustomColors.secondary,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            const DrawerHeader(
+            DrawerHeader(
               decoration: BoxDecoration(
                 color: Colors.blue,
                 image: DecorationImage(
-                  image: AssetImage("assets/bg1.jpg"),
+                  colorFilter: ColorFilter.mode(
+                    Colors.black.withOpacity(0.5),
+                    BlendMode.multiply,
+                  ),
+                  image: const AssetImage("assets/bg1.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
-              child: Text(
-                'Side Bar',
+              child: const Text(
+                'Falah Ahmad Zubir',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 24,
+                  fontSize: 20,
                 ),
               ),
             ),
@@ -72,6 +77,20 @@ class _RootPageState extends State<RootPage> {
             ListTile(
               leading: const Icon(Icons.favorite),
               title: const Text('Favourite'),
+              onTap: () {
+                // Handle side bar item 2 press
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.person),
+              title: const Text('Profile'),
+              onTap: () {
+                // Handle side bar item 2 press
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.logout_rounded),
+              title: const Text('Sign out'),
               onTap: () {
                 // Handle side bar item 2 press
               },
