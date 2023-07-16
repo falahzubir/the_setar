@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:the_setar/components/colors.dart';
 import 'package:the_setar/screens/setar/bestplace_page.dart';
 import 'package:the_setar/screens/setar/historic_page.dart';
 import 'package:the_setar/screens/setar/recreation_page.dart';
@@ -12,13 +13,15 @@ class HeritagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 1,
+        elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded,
-              color: Colors.black54),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: CustomColors.primary,
       ),
       body: SingleChildScrollView(
         child: Center(

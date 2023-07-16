@@ -16,39 +16,24 @@ class _HistoricPageState extends State<HistoricPage> {
 
     return Scaffold(
       appBar: AppBar(
-        elevation: 1,
+        elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded,
-              color: Colors.black54),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: CustomColors.primary,
       ),
       body: Stack(
         children: [
-          Column(
-            children: [
-              GestureDetector(
-                child: InteractiveViewer(
-                  boundaryMargin: const EdgeInsets.all(20.0),
-                  minScale: 0.5,
-                  maxScale: 3.0,
-                  scaleEnabled: true,
-                  child: Image.asset("assets/map.png"),
-                ),
-              ),
-            ],
-          ),
           Positioned(
             child: Container(
               height: height,
               width: width,
               decoration: const BoxDecoration(
                 color: CustomColors.secondary,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  topRight: Radius.circular(30),
-                ),
               ),
               child: SingleChildScrollView(
                 child: Column(

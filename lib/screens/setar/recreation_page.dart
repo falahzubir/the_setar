@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_setar/components/colors.dart';
 
 class RecreationPage extends StatefulWidget {
   const RecreationPage({super.key});
@@ -15,13 +16,15 @@ class _RecreationPageState extends State<RecreationPage> {
 
     return Scaffold(
       appBar: AppBar(
-        elevation: 1,
+        elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded,
-              color: Colors.black54),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: CustomColors.primary,
       ),
       body: Stack(
         children: [

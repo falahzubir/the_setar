@@ -1,0 +1,88 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
+import 'package:flutter/material.dart';
+
+import '../../components/colors.dart';
+import 'food_page.dart';
+
+class DetailsPage extends StatelessWidget {
+  final UserData userData;
+
+  const DetailsPage({required this.userData, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(userData.title),
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        backgroundColor: CustomColors.primary,
+      ),
+      body: Column(
+        children: [
+          // Image section (40% of the screen)
+          Container(
+            height: MediaQuery.of(context).size.height * 0.3,
+            width: double.infinity,
+            child: Image.asset(
+              '${userData.image}',
+              fit: BoxFit.cover,
+            ),
+          ),
+
+          // Text section with white background (60% of the screen)
+          Expanded(
+            child: Container(
+              color: Colors.white,
+              padding: EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  SizedBox(height: 10),
+
+                  Text(
+                    userData.description,
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+
+                  SizedBox(height: 50),
+
+                  // Url button
+                  SizedBox(
+                    height: 50,
+                    width: 200,
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text(
+                        "Go now!",
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStatePropertyAll(
+                          CustomColors.primary,
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  SizedBox(height: 25),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

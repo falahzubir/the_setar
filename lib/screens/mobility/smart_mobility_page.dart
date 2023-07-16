@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:the_setar/components/colors.dart';
 
 class MobilPage extends StatelessWidget {
   const MobilPage({super.key});
@@ -10,11 +11,13 @@ class MobilPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 1,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded,
-              color: Colors.black54),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: CustomColors.primary,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -36,6 +39,10 @@ class MobilPage extends StatelessWidget {
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  Image(
+                    width: 140,
+                    image: AssetImage("assets/h3.png"),
+                  ),
                   Text(
                     "SMART MOBILITY",
                     style: TextStyle(

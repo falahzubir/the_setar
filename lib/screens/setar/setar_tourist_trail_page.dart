@@ -3,6 +3,8 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:the_setar/screens/setar/food_page.dart';
 import 'package:the_setar/screens/setar/heritage_page.dart';
 
+import '../../components/colors.dart';
+
 class SetarPage extends StatelessWidget {
   const SetarPage({super.key});
 
@@ -10,13 +12,15 @@ class SetarPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        elevation: 1,
+        elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded,
-              color: Colors.black54),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: CustomColors.primary,
       ),
       body: SingleChildScrollView(
         child: Column(
