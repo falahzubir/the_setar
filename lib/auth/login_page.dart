@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:the_setar/components/colors.dart';
@@ -38,7 +36,6 @@ class _LoginPageState extends State<LoginPage> {
     );
 
     // After sign in remove loading cirlce
-    // ignore: use_build_context_synchronously
     Navigator.of(context).pop();
   }
 

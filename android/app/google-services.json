@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "205893961278",
-    "project_id": "thesetar-605d2",
-    "storage_bucket": "thesetar-605d2.appspot.com"
+    "project_number": "916149867172",
+    "project_id": "setar-2f4b0",
+    "storage_bucket": "setar-2f4b0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:205893961278:android:2db385e94538d011dff36f",
+        "mobilesdk_app_id": "1:916149867172:android:7a30b5f0ad6f6458fecc31",
         "android_client_info": {
           "package_name": "com.example.the_setar"
         }
       },
       "oauth_client": [
         {
-          "client_id": "205893961278-83vue6vvmbssgqa29oeslnstljsqbvhv.apps.googleusercontent.com",
+          "client_id": "916149867172-pulm511veeceqmaul6ice06lti342i72.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCExgOKxo_PwO1ermy2sFfEucohoF_nYTs"
+          "current_key": "AIzaSyB8rfFhC09okrqrTivmZ_E_b-iah7pj0cc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "205893961278-83vue6vvmbssgqa29oeslnstljsqbvhv.apps.googleusercontent.com",
+              "client_id": "916149867172-pulm511veeceqmaul6ice06lti342i72.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

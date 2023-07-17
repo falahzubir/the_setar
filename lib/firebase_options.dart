@@ -50,20 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCExgOKxo_PwO1ermy2sFfEucohoF_nYTs',
-    appId: '1:205893961278:android:2db385e94538d011dff36f',
-    messagingSenderId: '205893961278',
-    projectId: 'thesetar-605d2',
-    storageBucket: 'thesetar-605d2.appspot.com',
+    apiKey: 'AIzaSyB8rfFhC09okrqrTivmZ_E_b-iah7pj0cc',
+    appId: '1:916149867172:android:7a30b5f0ad6f6458fecc31',
+    messagingSenderId: '916149867172',
+    projectId: 'setar-2f4b0',
+    storageBucket: 'setar-2f4b0.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAVJ0AqXZeww_n35oNu_66T0gaQhhJTkuk',
-    appId: '1:205893961278:ios:0bf17e27c8b0ed08dff36f',
-    messagingSenderId: '205893961278',
-    projectId: 'thesetar-605d2',
-    storageBucket: 'thesetar-605d2.appspot.com',
-    iosClientId: '205893961278-vr5r0fqep54n1nhn93pt87sk6endl4k9.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB5PT5qfu8wXCNOlxKXNA0XNuHCwdJCSiE',
+    appId: '1:916149867172:ios:217f34f36dcf8b9cfecc31',
+    messagingSenderId: '916149867172',
+    projectId: 'setar-2f4b0',
+    storageBucket: 'setar-2f4b0.appspot.com',
+    iosClientId: '916149867172-158dkn74b1ugb1pt9h6ahu7nh4arbqmp.apps.googleusercontent.com',
     iosBundleId: 'com.example.theSetar',
   );
 }
