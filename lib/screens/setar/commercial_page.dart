@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:the_setar/components/colors.dart';
 
 import '../../model/data_model.dart';
@@ -98,7 +99,7 @@ class _ShoppingPageState extends State<ShoppingPage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 600.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Pekan Rabu
@@ -156,7 +157,7 @@ class _ShoppingPageState extends State<ShoppingPage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 700.ms).slideX(),
                     const SizedBox(height: 20),
                   ],
                 ),

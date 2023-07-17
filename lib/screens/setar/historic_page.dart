@@ -99,7 +99,7 @@ class _HistoricPageState extends State<HistoricPage> {
                           ],
                         ),
                       ),
-                    ).animate().fade(delay: 500.ms).slideX(),
+                    ).animate().fade(delay: 600.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Rumah Kelahiran Tun M
@@ -157,7 +157,7 @@ class _HistoricPageState extends State<HistoricPage> {
                           ],
                         ),
                       ),
-                    ).animate().fade(delay: 500.ms).slideX(),
+                    ).animate().fade(delay: 700.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Rumah Merdeka
@@ -215,7 +215,7 @@ class _HistoricPageState extends State<HistoricPage> {
                           ],
                         ),
                       ),
-                    ).animate().fade(delay: 500.ms).slideX(),
+                    ).animate().fade(delay: 800.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Kedah Royal Museum
@@ -273,7 +273,7 @@ class _HistoricPageState extends State<HistoricPage> {
                           ],
                         ),
                       ),
-                    ).animate().fade(delay: 500.ms).slideX(),
+                    ).animate().fade(delay: 900.ms).slideX(),
                     const SizedBox(height: 20),
                   ],
                 ),

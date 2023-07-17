@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:the_setar/screens/setar/details_page.dart';
 
 import '../../components/colors.dart';
@@ -94,7 +95,7 @@ class _FoodPageState extends State<FoodPage> {
                     ],
                   ),
                 ),
-              ),
+              ).animate().fade(delay: 600.ms).slideX(),
 
               // Spacing
               const SizedBox(height: 20),
@@ -154,7 +155,7 @@ class _FoodPageState extends State<FoodPage> {
                     ],
                   ),
                 ),
-              ),
+              ).animate().fade(delay: 700.ms).slideX(),
 
               // Spacing
               const SizedBox(height: 20),
@@ -214,7 +215,7 @@ class _FoodPageState extends State<FoodPage> {
                     ],
                   ),
                 ),
-              ),
+              ).animate().fade(delay: 800.ms).slideX(),
 
               // Spacing
               const SizedBox(height: 20),
@@ -275,7 +276,7 @@ class _FoodPageState extends State<FoodPage> {
                     ],
                   ),
                 ),
-              ),
+              ).animate().fade(delay: 900.ms).slideX(),
 
               // Spacing
               const SizedBox(height: 20),

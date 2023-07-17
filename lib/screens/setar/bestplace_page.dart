@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 import '../../components/colors.dart';
 import '../../model/data_model.dart';
@@ -98,7 +99,7 @@ class _BestPlacePageState extends State<BestPlacePage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 600.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Kedah State Museum
@@ -156,7 +157,7 @@ class _BestPlacePageState extends State<BestPlacePage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 700.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Rumah Kelahiran Tun M
@@ -214,7 +215,7 @@ class _BestPlacePageState extends State<BestPlacePage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 800.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Rumah Merdeka
@@ -272,7 +273,7 @@ class _BestPlacePageState extends State<BestPlacePage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 900.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Laksa Tepi Sungai
@@ -330,7 +331,7 @@ class _BestPlacePageState extends State<BestPlacePage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 1000.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Aman Central
@@ -388,7 +389,7 @@ class _BestPlacePageState extends State<BestPlacePage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 1100.ms).slideX(),
                     const SizedBox(height: 20),
                   ],
                 ),
