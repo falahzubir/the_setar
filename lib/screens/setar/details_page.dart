@@ -28,11 +28,11 @@ class DetailsPage extends StatelessWidget {
       body: Column(
         children: [
           // Image section (40% of the screen)
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height * 0.3,
             width: double.infinity,
             child: Image.asset(
-              '${userData.image}',
+              userData.image,
               fit: BoxFit.cover,
             ),
           ),
@@ -63,15 +63,15 @@ class DetailsPage extends StatelessWidget {
                       width: 200,
                       child: ElevatedButton(
                         onPressed: () {},
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStatePropertyAll(
+                            CustomColors.primary,
+                          ),
+                        ),
                         child: Text(
                           "Go now!",
                           style: TextStyle(
                             fontSize: 16,
-                          ),
-                        ),
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStatePropertyAll(
-                            CustomColors.primary,
                           ),
                         ),
                       ),

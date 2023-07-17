@@ -61,6 +61,7 @@ class _RegisterPageState extends State<RegisterPage> {
       );
 
       // After sign in remove loading cirlce
+      // ignore: use_build_context_synchronously
       Navigator.of(context).pop();
     }
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:the_setar/components/colors.dart';
 
 import '../../model/data_model.dart';
@@ -98,7 +99,7 @@ class _HistoricPageState extends State<HistoricPage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 500.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Rumah Kelahiran Tun M
@@ -156,7 +157,7 @@ class _HistoricPageState extends State<HistoricPage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 500.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Rumah Merdeka
@@ -214,7 +215,7 @@ class _HistoricPageState extends State<HistoricPage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 500.ms).slideX(),
                     const SizedBox(height: 20),
 
                     // Kedah Royal Museum
@@ -272,7 +273,7 @@ class _HistoricPageState extends State<HistoricPage> {
                           ],
                         ),
                       ),
-                    ),
+                    ).animate().fade(delay: 500.ms).slideX(),
                     const SizedBox(height: 20),
                   ],
                 ),

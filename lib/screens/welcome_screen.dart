@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_setar/screens/root_page.dart';
+
+import '../auth/auth_page.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -11,7 +12,7 @@ class WelcomeScreen extends StatelessWidget {
         image: DecorationImage(
           image: AssetImage("assets/bg1.jpg"),
           fit: BoxFit.cover,
-          opacity: 0.7,
+          opacity: 1,
         ),
       ),
       child: Material(
@@ -22,32 +23,67 @@ class WelcomeScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  "Enjoy",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.5,
+                Container(
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2), // Shadow color
+                        blurRadius: 6, // Spread radius
+                        offset: const Offset(0, 3), // Offset in x and y directions
+                      ),
+                    ],
+                  ),
+                  child: const Text(
+                    "Enjoy",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 1.5,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 2),
-                Text(
-                  "The SETAR!",
-                  style: TextStyle(
-                    color: Colors.white.withOpacity(0.9),
-                    fontSize: 35,
-                    fontWeight: FontWeight.w400,
-                    letterSpacing: 1.5,
+                Container(
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2), // Shadow color
+                        blurRadius: 6, // Spread radius
+                        offset: const Offset(0, 3), // Offset in x and y directions
+                      ),
+                    ],
+                  ),
+                  child: Text(
+                    "The SETAR!",
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(1),
+                      fontSize: 35,
+                      fontWeight: FontWeight.w400,
+                      letterSpacing: 1.5,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 12),
-                Text(
-                  "Welcome to SETAR app, where adventure awaits! Explore new destinations, discover hidden gems, and create unforgettable memories with just a tap of your finger.",
-                  style: TextStyle(
-                    color: Colors.white.withOpacity(0.7),
-                    fontSize: 16,
-                    letterSpacing: 1.2,
+
+                // Long text
+                Container(
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2), // Shadow color
+                        blurRadius: 6, // Spread radius
+                        offset: const Offset(0, 3), // Offset in x and y directions
+                      ),
+                    ],
+                  ),
+                  child: Text(
+                    "Welcome to SETAR app, where adventure awaits! Explore new destinations, discover hidden gems, and create unforgettable memories with just a tap of your finger.",
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(1),
+                      fontSize: 16,
+                      letterSpacing: 1.2,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 30),
@@ -56,7 +92,7 @@ class WelcomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const RootPage(),
+                        builder: (context) => const AuthPage(),
                       ),
                     );
                   },

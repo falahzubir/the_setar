@@ -38,6 +38,7 @@ class _LoginPageState extends State<LoginPage> {
     );
 
     // After sign in remove loading cirlce
+    // ignore: use_build_context_synchronously
     Navigator.of(context).pop();
   }
 
