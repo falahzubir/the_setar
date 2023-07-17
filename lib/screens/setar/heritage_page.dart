@@ -4,7 +4,7 @@ import 'package:the_setar/components/colors.dart';
 import 'package:the_setar/screens/setar/bestplace_page.dart';
 import 'package:the_setar/screens/setar/historic_page.dart';
 import 'package:the_setar/screens/setar/recreation_page.dart';
-import 'package:the_setar/screens/setar/shopping_page.dart';
+import 'package:the_setar/screens/setar/commercial_page.dart';
 
 class HeritagePage extends StatelessWidget {
   const HeritagePage({super.key});
@@ -97,7 +97,7 @@ class HeritagePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Shopping Place",
+                        "Commercial Tourism",
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,

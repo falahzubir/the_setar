@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../components/colors.dart';
+import '../../model/data_model.dart';
+import 'details_page.dart';
+
 class BestPlacePage extends StatefulWidget {
   const BestPlacePage({super.key});
 
@@ -15,214 +19,377 @@ class _BestPlacePageState extends State<BestPlacePage> {
 
     return Scaffold(
       appBar: AppBar(
-        elevation: 1,
+        elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded,
-              color: Colors.black54),
+          icon: const Icon(
+            Icons.arrow_back_ios_new_rounded,
+            color: Colors.white,
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: CustomColors.primary,
       ),
       body: Stack(
         children: [
-          Column(
-            children: [
-              GestureDetector(
-                child: InteractiveViewer(
-                  boundaryMargin: const EdgeInsets.all(20.0),
-                  minScale: 0.5,
-                  maxScale: 3.0,
-                  scaleEnabled: true,
-                  child: Image.asset("assets/map.png"),
-                ),
-              ),
-              // Image.asset("assets/history1.jpg"),
-            ],
-          ),
           Positioned(
             child: Container(
-              padding: const EdgeInsets.all(20),
-              margin: EdgeInsets.only(top: height * .4),
-              height: height * .6,
+              height: height,
               width: width,
               decoration: const BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  topRight: Radius.circular(30),
-                ),
+                color: CustomColors.secondary,
               ),
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    const SizedBox(height: 10),
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                    const SizedBox(height: 20),
+
+                    // Dataran Masjid Zahir
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                DetailsPage(userData: dataranMasjidZahir),
                           ),
-                        ],
-                      ),
-                      child: const Text(
-                        "Masjid Al-Bukhary",
-                        style: TextStyle(
+                        );
+                      },
+                      child: Container(
+                        alignment: const Alignment(0, 0),
+                        height: 150,
+                        width: 380,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          children: [
+                            // Image
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  "assets/dataran_masjid_zahir.png",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(width: 40),
+
+                            // Nama tempat
+                            const Text(
+                              "Dataran Masjid Zahir",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                    const SizedBox(height: 20),
+
+                    // Kedah State Museum
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                DetailsPage(userData: kedahMuseum),
                           ),
-                        ],
-                      ),
-                      child: const Text(
-                        "Muzium Diraja",
-                        style: TextStyle(
+                        );
+                      },
+                      child: Container(
+                        alignment: const Alignment(0, 0),
+                        height: 150,
+                        width: 380,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          children: [
+                            // Image
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  "assets/muzium_kedah.jpg",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(width: 40),
+
+                            // Nama tempat
+                            const Text(
+                              "Kedah State Museum",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                    const SizedBox(height: 20),
+
+                    // Rumah Kelahiran Tun M
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                DetailsPage(userData: rumahKelahiran),
                           ),
-                        ],
-                      ),
-                      child: const Text(
-                        "Aman Central",
-                        style: TextStyle(
+                        );
+                      },
+                      child: Container(
+                        alignment: const Alignment(0, 0),
+                        height: 150,
+                        width: 380,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          children: [
+                            // Image
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  "assets/historical/rumah_kelahiran.png",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(width: 40),
+
+                            // Nama tempat
+                            const Text(
+                              "Rumah Kelahiran Tun M",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                    const SizedBox(height: 20),
+
+                    // Rumah Merdeka
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                DetailsPage(userData: rumahMerdeka),
                           ),
-                        ],
-                      ),
-                      child: const Text(
-                        "Pekan Rabu",
-                        style: TextStyle(
+                        );
+                      },
+                      child: Container(
+                        alignment: const Alignment(0, 0),
+                        height: 150,
+                        width: 380,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          children: [
+                            // Image
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  "assets/rumah_merdeka.jpg",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(width: 40),
+
+                            // Nama tempat
+                            const Text(
+                              "Rumah Merdeka",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                    const SizedBox(height: 20),
+
+                    // Laksa Tepi Sungai
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                DetailsPage(userData: laksaData),
                           ),
-                        ],
-                      ),
-                      child: const Text(
-                        "Rumah Tok Su",
-                        style: TextStyle(
+                        );
+                      },
+                      child: Container(
+                        alignment: const Alignment(0, 0),
+                        height: 150,
+                        width: 380,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          children: [
+                            // Image
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  "assets/laksa.png",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(width: 40),
+
+                            // Nama tempat
+                            const Text(
+                              "Laksa Tepi Sungai",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                    const SizedBox(height: 20),
+
+                    // Aman Central
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                DetailsPage(userData: amanCentral),
                           ),
-                        ],
-                      ),
-                      child: const Text(
-                        "Souq Al-Bukhary",
-                        style: TextStyle(
+                        );
+                      },
+                      child: Container(
+                        alignment: const Alignment(0, 0),
+                        height: 150,
+                        width: 380,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          children: [
+                            // Image
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  "assets/aman.jpg",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(width: 40),
+
+                            // Nama tempat
+                            const Text(
+                              "Aman Central",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    Container(
-                      alignment: const Alignment(0, 0),
-                      height: 120,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.blue[900],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.3),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
-                          ),
-                        ],
-                      ),
-                      child: const Text(
-                        "Meat Freak BBQ & Steak",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
+                    const SizedBox(height: 20),
                   ],
                 ),
               ),

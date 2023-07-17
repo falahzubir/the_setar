@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 import '../../components/colors.dart';
-import 'food_page.dart';
+import '../../model/data_model.dart';
 
 class DetailsPage extends StatelessWidget {
   final UserData userData;
@@ -42,42 +42,44 @@ class DetailsPage extends StatelessWidget {
             child: Container(
               color: Colors.white,
               padding: EdgeInsets.all(20),
-              child: Column(
-                children: [
-                  SizedBox(height: 10),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: 10),
 
-                  Text(
-                    userData.description,
-                    style: TextStyle(
-                      fontSize: 16,
+                    Text(
+                      userData.description,
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                      textAlign: TextAlign.justify,
                     ),
-                    textAlign: TextAlign.justify,
-                  ),
 
-                  SizedBox(height: 50),
+                    SizedBox(height: 50),
 
-                  // Url button
-                  SizedBox(
-                    height: 50,
-                    width: 200,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text(
-                        "Go now!",
-                        style: TextStyle(
-                          fontSize: 16,
+                    // Url button
+                    SizedBox(
+                      height: 50,
+                      width: 200,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Go now!",
+                          style: TextStyle(
+                            fontSize: 16,
+                          ),
+                        ),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStatePropertyAll(
+                            CustomColors.primary,
+                          ),
                         ),
                       ),
-                      style: ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll(
-                          CustomColors.primary,
-                        ),
-                      ),
                     ),
-                  ),
 
-                  SizedBox(height: 25),
-                ],
+                    SizedBox(height: 25),
+                  ],
+                ),
               ),
             ),
           ),
