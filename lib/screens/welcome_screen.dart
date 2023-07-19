@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../auth/auth_page.dart';
+import 'package:the_setar/screens/home_page.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -29,7 +28,8 @@ class WelcomeScreen extends StatelessWidget {
                       BoxShadow(
                         color: Colors.black.withOpacity(0.2), // Shadow color
                         blurRadius: 6, // Spread radius
-                        offset: const Offset(0, 3), // Offset in x and y directions
+                        offset:
+                            const Offset(0, 3), // Offset in x and y directions
                       ),
                     ],
                   ),
@@ -50,7 +50,8 @@ class WelcomeScreen extends StatelessWidget {
                       BoxShadow(
                         color: Colors.black.withOpacity(0.2), // Shadow color
                         blurRadius: 6, // Spread radius
-                        offset: const Offset(0, 3), // Offset in x and y directions
+                        offset:
+                            const Offset(0, 3), // Offset in x and y directions
                       ),
                     ],
                   ),
@@ -73,7 +74,8 @@ class WelcomeScreen extends StatelessWidget {
                       BoxShadow(
                         color: Colors.black.withOpacity(0.2), // Shadow color
                         blurRadius: 6, // Spread radius
-                        offset: const Offset(0, 3), // Offset in x and y directions
+                        offset:
+                            const Offset(0, 3), // Offset in x and y directions
                       ),
                     ],
                   ),
@@ -92,7 +94,7 @@ class WelcomeScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const AuthPage(),
+                        builder: (context) => const HomePage(),
                       ),
                     );
                   },

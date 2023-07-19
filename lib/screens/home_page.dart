@@ -35,12 +35,25 @@ class _HomePageState extends State<HomePage> {
                 decoration: BoxDecoration(
                   color: CustomColors.primary,
                 ),
-                child: Text(
-                  user.email!,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                  ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Welcome!",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      user.email!,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 17,
+                      ),
+                    ),
+                  ],
                 ),
               ),
 
@@ -434,7 +447,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 20.0),
                   child: Container(
-                    height: 200,
+                    height: 210,
                     width: 355,
                     alignment: const Alignment(0, 0),
                     decoration: BoxDecoration(
@@ -452,6 +465,22 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ).animate().fade(delay: 450.ms).slideX(),
+                ),
+
+                // Spacing
+                const SizedBox(height: 100),
+
+                // Recommended Text
+                Container(
+                  child: const Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      "That's all for now!",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
                 ),
 
                 // Spacing
