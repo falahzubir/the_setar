@@ -257,7 +257,7 @@ class _RecreationPageState extends State<RecreationPage> {
 
                             // Nama tempat
                             const Text(
-                              "Pusat Sains Negara Cawangan Utara",
+                              "Pusat Sains Negara \n  Cawangan Utara",
                               style: TextStyle(
                                 color: Colors.black,
                               ),

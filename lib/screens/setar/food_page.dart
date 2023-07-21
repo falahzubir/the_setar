@@ -89,7 +89,6 @@ class _FoodPageState extends State<FoodPage> {
                         "Laksa Tepi Sungai",
                         style: TextStyle(
                           color: Colors.black,
-                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -149,7 +148,6 @@ class _FoodPageState extends State<FoodPage> {
                         "Mee Abu",
                         style: TextStyle(
                           color: Colors.black,
-                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -209,7 +207,6 @@ class _FoodPageState extends State<FoodPage> {
                         "Nasi Lemak Haji Ali",
                         style: TextStyle(
                           color: Colors.black,
-                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -270,7 +267,6 @@ class _FoodPageState extends State<FoodPage> {
                         "Rumah Mengambing",
                         style: TextStyle(
                           color: Colors.black,
-                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -323,7 +319,6 @@ class _FoodPageState extends State<FoodPage> {
                         "Meat Freak",
                         style: TextStyle(
                           color: Colors.black,
-                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -369,14 +364,13 @@ class _FoodPageState extends State<FoodPage> {
                         ),
                       ),
 
-                      const SizedBox(width: 40),
+                      const SizedBox(width: 20),
 
                       // Nama tempat
                       const Text(
                         "Alor Setar Breakfast Station",
                         style: TextStyle(
                           color: Colors.black,
-                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],

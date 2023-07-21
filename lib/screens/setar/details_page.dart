@@ -44,6 +44,7 @@ class DetailsPage extends StatelessWidget {
               padding: EdgeInsets.all(20),
               child: SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 10),
 
@@ -57,21 +58,87 @@ class DetailsPage extends StatelessWidget {
 
                     SizedBox(height: 50),
 
-                    // Url button
-                    SizedBox(
-                      height: 50,
-                      width: 200,
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStatePropertyAll(
-                            CustomColors.primary,
+                    Text(
+                      "Inside",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 22,
+                      ),
+                    ),
+
+                    SizedBox(height: 10),
+
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          // Image 1
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: DecorationImage(
+                                image: AssetImage(userData.image1),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
-                        ),
-                        child: Text(
-                          "Go now!",
-                          style: TextStyle(
-                            fontSize: 16,
+
+                          // Spacing
+                          SizedBox(width: 10),
+
+                          // Image 2
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: DecorationImage(
+                                image: AssetImage(userData.image2),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+
+                          // Spacing
+                          SizedBox(width: 10),
+
+                          // Image 3
+                          Container(
+                            height: 200,
+                            width: 250,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: DecorationImage(
+                                image: AssetImage(userData.image3),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    SizedBox(height: 50),
+
+                    // Url button
+                    Center(
+                      child: SizedBox(
+                        height: 50,
+                        width: 200,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStatePropertyAll(
+                              CustomColors.primary,
+                            ),
+                          ),
+                          child: Text(
+                            "Go now!",
+                            style: TextStyle(
+                              fontSize: 16,
+                            ),
                           ),
                         ),
                       ),
