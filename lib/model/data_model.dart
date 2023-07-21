@@ -64,7 +64,7 @@ UserData amanCentral = UserData(
 );
 
 UserData pekanRabu = UserData(
-  'assets/pekan_rabu.png',
+  'assets/pekan_rabu.jpg',
   'Pekan Rabu',
   'Pekan Rabu, also known as "Wednesday Market," is a famous landmark and traditional market in Alor Setar, the capital city of the Malaysian state of Kedah. It is a popular destination among locals and tourists alike, known for its diverse range of products and vibrant atmosphere. The market is particularly renowned for its variety of traditional Malay snacks and delicacies. You can find items such as kuih (local pastries), dodol (a sticky sweet treat), keropok (crackers), and various local snacks that represent the rich culinary heritage of the region. Aside from food, Pekan Rabu also offers traditional arts and crafts, including batik fabric, woven baskets, pottery, traditional clothing, and other unique items that reflect the local craftsmanship and cultural traditions.',
 );

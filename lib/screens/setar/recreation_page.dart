@@ -217,6 +217,56 @@ class _RecreationPageState extends State<RecreationPage> {
                       ),
                     ).animate().fade(delay: 800.ms).slideX(),
                     const SizedBox(height: 20),
+
+                    // Pusat Sains Negara Cawangan Utara
+                    GestureDetector(
+                      onTap: () {},
+                      child: Container(
+                        alignment: const Alignment(0, 0),
+                        height: 150,
+                        width: 380,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          children: [
+                            // Image
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  "assets/pusat_sains.webp",
+                                  width: 140,
+                                  height: 140,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(width: 40),
+
+                            // Nama tempat
+                            const Text(
+                              "Pusat Sains Negara Cawangan Utara",
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ).animate().fade(delay: 900.ms).slideX(),
+                    const SizedBox(height: 20),
                   ],
                 ),
               ),
