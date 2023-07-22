@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:share/share.dart';
 
 import '../../components/colors.dart';
 import '../../model/data_model.dart';
@@ -128,17 +129,26 @@ class DetailsPage extends StatelessWidget {
                         height: 50,
                         width: 200,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Share.share(userData.link);
+                          },
                           style: ButtonStyle(
                             backgroundColor: MaterialStatePropertyAll(
                               CustomColors.primary,
                             ),
                           ),
-                          child: Text(
-                            "Go now!",
-                            style: TextStyle(
-                              fontSize: 16,
-                            ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.location_on_outlined),
+                              SizedBox(width: 5),
+                              Text(
+                                "Google Maps",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),

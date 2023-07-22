@@ -3,6 +3,7 @@ class UserData {
   final String image1;
   final String image2;
   final String image3;
+  final String link;
   final String title;
   final String description;
 
@@ -11,6 +12,7 @@ class UserData {
     this.image1,
     this.image2,
     this.image3,
+    this.link,
     this.title,
     this.description,
   );
@@ -22,6 +24,7 @@ UserData laksaData = UserData(
   'assets/laksa1.png',
   'assets/laksa2.png',
   'assets/laksa3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/laksa+tepi+sungai+alo+setar/@5.6428316,100.4033493,12z/data=!3m1!4b1!4m6!4m5!1m1!4e1!1m2!1m1!1s0x304b44a2a4e65a6b:0xf010e055c2ea8c0b?entry=ttu',
   'Laksa Tepi Sungai',
   'Laksa Tepi Sungai Kedah is a popular local dish in the Malaysian state of Kedah. It is a variant of laksa, which is a traditional spicy noodle soup commonly found in Southeast Asia. The name "Laksa Tepi Sungai" translates to "Laksa by the riverside" in English, indicating that it is a dish commonly enjoyed near the river in Kedah. The dish typically consists of rice noodles served in a flavorful broth made from a combination of spices, herbs, and various ingredients.',
 );
@@ -31,6 +34,7 @@ UserData meeAbu = UserData(
   'assets/mee_abu1.png',
   'assets/mee_abu2.png',
   'assets/mee_abu.jpg',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/mee+abu+alor+setar/@5.8778757,100.1728277,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b5b31e6ddd2d7:0x208e01d54a9c2cdb!2m2!1d100.3831349!2d6.1425274?entry=ttu',
   'Mee Abu',
   'Mee Abu Alor Star features yellow egg noodles, commonly known as "mee kuning" or "mee jawa," which are cooked to perfection. The noodles are typically stir-fried with a combination of ingredients, resulting in a flavorful and aromatic dish.',
 );
@@ -40,6 +44,7 @@ UserData nasiLemak = UserData(
   'assets/nasik_lemak_hj_ali1.png',
   'assets/nasik_lemak_hj_ali2.png',
   'assets/nasik_lemak_hj_ali3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/nasi+lemak+haji+ali+alor+setar/@5.8644822,100.1632146,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b44987ecf96db:0x5a32f1c5f94b94f!2m2!1d100.3629012!2d6.1143128?entry=ttu',
   'Nasi Lemak Haji Ali',
   'Nasi Lemak Haji Ali is a well-known restaurant in Alor Setar, Malaysia that specializes in serving Nasi Lemak, a popular Malaysian dish. It is a beloved spot among locals and visitors alike who seek authentic and flavorful Malaysian cuisine.',
 );
@@ -49,6 +54,7 @@ UserData rumahMengambing = UserData(
   'assets/rumah_mengambing1.png',
   'assets/rumah_mengambing2.png',
   'assets/rumah_mengambing3.png',
+  'https://www.google.com/maps/dir//rumah+mengambing+alor+setar/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x304b438a0ea9f27f:0xd982ae195af28dd?sa=X&ved=2ahUKEwictq-ThKKAAxUBTWwGHWP1ALQQ9Rd6BAg-EAA&ved=2ahUKEwictq-ThKKAAxUBTWwGHWP1ALQQ9Rd6BAhKEAQ',
   'Rumah Mengambing',
   'Warung Mengambing is known for its tender and flavorful goat dishes, and they aim to provide an enjoyable dining experience for their customers. The restaurant\'s ambiance is typically casual and welcoming, with a focus on showcasing the flavors of Malay cuisine.',
 );
@@ -59,6 +65,7 @@ UserData kedahMuseum = UserData(
   'assets/ksm1.png',
   'assets/ksm2.png',
   'assets/ksm3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/muzium+negeri+kedah/@5.8760935,100.1632239,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b44b4de673f09:0x73a77d41df8c7079!2m2!1d100.3690401!2d6.1360153?entry=ttu',
   'Kedah State Museum',
   'The Kedah State Museum is a beautiful structure of Alor Setar, in white and pink colors, with tall graceful columns adorning the entrance. The building was built in 1936 under the influence of the styles of Thai palace architecture. The state museum was moved to this building in 1964 - seven years after the foundation of the museum collection. The design work continued for another dozen years. The museum offers insights into the history, culture, and heritage of the Kedah state.',
 );
@@ -68,6 +75,7 @@ UserData rumahKelahiran = UserData(
   'assets/rktm1.png',
   'assets/rktm2.png',
   'assets/rktm3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/rumah+kelahiran+tun+dr.+mahathir/@5.8632429,100.1632239,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b44979645fe75:0x95bdc084ac712248!2m2!1d100.3628586!2d6.1132015?entry=ttu',
   'Rumah Kelahiran Tun M',
   'Dr Mahathir Mohamad, Malaysia’s seventh and longest-serving prime minister, was born the youngest of nine children in Alor Setar in 1925. Rumah Kelahiran Mahathir, his childhood home, is now preserved as a small but worthwhile museum, containing family effects, photos and the politician’s old bicycle. Aside from providing an insight into Mahathir’s early life, the museum is an interesting example of a traditional Malaysian house.',
 );
@@ -77,6 +85,7 @@ UserData rumahMerdeka = UserData(
   'assets/rumah_merdeka1.png',
   'assets/rumah_merdeka2.png',
   'assets/rumah_merdeka3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/rumah+merdeka/@5.8680527,100.1619474,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b44a4dabe85d9:0xed12f9f255efca45!2m2!1d100.3602481!2d6.123038?entry=ttu',
   'Rumah Merdeka',
   'Rumah Merdeka which means "Independence House"in Malay, is a house that was once owned by the 1st prime minister of Malaysia, the late Tunku Abdul Rahman Putra. Inside Rumah Merdeka, visitors will able to see some personal collections of Tunku and his family. Most of the items such as the furniture and the layout of the house are maintained in their original positions. This attraction is open on every Tuesday-Sunday from 10am-6:30pm with a free admission but sadly, photography is not allowed inside.',
 );
@@ -86,6 +95,7 @@ UserData kedahRoyalMuseum = UserData(
   'assets/royal_museum1.png',
   'assets/royal_museum2.png',
   'assets/royal_museum3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/kedah+royal+museum/@5.8668771,100.1632239,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b44ceffffffff:0x13cfaba44f73f165!2m2!1d100.3670306!2d6.1197299?entry=ttu',
   'Kedah Royal Museum',
   'The Kedah Royal Museum is housed in the former royal palace, which was the official residence of the Kedah Sultanate until 1922. The museum offers visitors a unique opportunity to explore the royal artifacts, regalia, historical documents, photographs, and personal belongings of the Kedah royal family. Inside the museum, you can explore various sections that provide insights into the history, culture, and traditions of the Kedah Sultanate. The exhibits include royal costumes, jewelry, weaponry, ceremonial items, and other artifacts that showcase the grandeur and splendor of the Kedah royal court. The museum also features reconstructions of royal chambers, including the bedrooms, reception halls, and ceremonial spaces, offering visitors a glimpse into the royal lifestyle.',
 );
@@ -96,6 +106,7 @@ UserData amanCentral = UserData(
   'assets/aman1.png',
   'assets/aman2.png',
   'assets/aman3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/aman+central/@5.8758381,100.1632239,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b44b989a617a5:0xf4a1fe629aad4c76!2m2!1d100.3667935!2d6.1248637?entry=ttu',
   'Aman Central',
   'Aman Central is known for its diverse selection of stores, with both local and international brands represented. The mall features various fashion retailers, including clothing, footwear, accessories, and beauty products. Additionally, you can find electronics, home decor, sports equipment, books, and more. The mall also boasts a wide range of dining options, including local Malaysian cuisine, international food chains, cafes, and fast-food outlets. Whether you\'re looking for traditional Malaysian dishes, Western cuisine, or Asian fusion, Aman Central offers a variety of dining choices to suit different tastes.',
 );
@@ -105,6 +116,7 @@ UserData pekanRabu = UserData(
   'assets/pekan_rabu1.png',
   'assets/pekan_rabu2.png',
   'assets/pekan_rabu3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/Pekan+Rabu+Alor+Setar,+Kompleks+Pekan+Rabu,+Jalan+Tunku+Ibrahim,+Bandar+Alor+Setar,+05000+Alor+Setar,+Kedah/@5.8654357,100.1632239,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b44be4276cd5d:0xfa7b5e52cb1a93df!2m2!1d100.3674638!2d6.1170957?entry=ttu',
   'Pekan Rabu',
   'Pekan Rabu, also known as "Wednesday Market," is a famous landmark and traditional market in Alor Setar, the capital city of the Malaysian state of Kedah. It is a popular destination among locals and tourists alike, known for its diverse range of products and vibrant atmosphere. The market is particularly renowned for its variety of traditional Malay snacks and delicacies. You can find items such as kuih (local pastries), dodol (a sticky sweet treat), keropok (crackers), and various local snacks that represent the rich culinary heritage of the region. Aside from food, Pekan Rabu also offers traditional arts and crafts, including batik fabric, woven baskets, pottery, traditional clothing, and other unique items that reflect the local craftsmanship and cultural traditions.',
 );
@@ -115,6 +127,7 @@ UserData dataranJubliMas = UserData(
   'assets/dataran_jubli_mas1.png',
   'assets/dataran_jubli_mas2.png',
   'assets/dataran_jubli_mas3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/Taman+Jubli+Emas,+Kampung+Suka+Menanti,+05150+Alor+Setar,+Kedah/@5.8887948,100.1619921,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b5b6605539879:0x854feb2cc44fc02a!2m2!1d100.3607981!2d6.1623869?entry=ttu',
   'Dataran Jubli Emas',
   'Dataran Jubli Emas, also known as the Golden Jubilee Square, is a prominent public square located in Alor Setar, the capital city of Kedah, Malaysia. The square was built to commemorate the 50th anniversary of the reign of Sultan Abdul Halim Mu\'adzam Shah, the 14th Sultan of Kedah. Dataran Jubli Emas is a popular gathering place and a landmark in Alor Setar. The square is characterized by its iconic and distinctive golden dome structure, which represents the Jubilee celebrations.',
 );
@@ -124,6 +137,7 @@ UserData dataranPahlawan = UserData(
   'assets/dataran_pahlawan1.png',
   'assets/dataran_pahlawan2.png',
   'assets/dataran_pahlawan.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/Dataran+Pahlawan,+Alor+Setar,+Jalan+Tunku+Bendahara,+Taman+Jubli+Perak,+05250+Alor+Setar,+Kedah/@5.8801911,100.1684004,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b5b3818d5cbcf:0xc770921fde3968b1!2m2!1d100.3731564!2d6.1473151?entry=ttu',
   'Dataran Pahlawan',
   'Dataran Pahlawan is a square in Kedah. Dataran Pahlawan is situated nearby to Kampung Warisan and the golf course Royal Kedah Club. Dataran Pahlawan, also known as Warrior Square, is a significant landmark in Alor Setar. It is situated in the heart of the city and holds historical and cultural significance. The square serves as a gathering place and a venue for various events, festivals, and celebrations. Dataran Pahlawan features a central fountain surrounded by beautifully landscaped gardens and walkways. The square\'s design incorporates elements that reflect the rich cultural heritage of Kedah, and it provides a serene environment for residents and visitors to enjoy.',
 );
@@ -133,6 +147,7 @@ UserData dataranMasjidZahir = UserData(
   'assets/dataran_masjid_zahir1.png',
   'assets/dataran_masjid_zahir2.png',
   'assets/dataran_masjid_zahir3.png',
+  'https://www.google.com/maps/dir/5.6428358,100.4733899/dataran+masjid+zahir/@5.8665722,100.1632239,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x304b450500cd0c27:0xdc8c5a4fd9c94a5b!2m2!1d100.3661367!2d6.1198855?entry=ttu',
   'Dataran Masjid Zahir',
   'Dataran Masjid Zahir, also known as Zahir Mosque Square, is a prominent public square located in Alor Setar, the capital city of Kedah, Malaysia. It is situated in front of the iconic Zahir Mosque, one of the oldest and most significant mosques in Malaysia. Dataran Masjid Zahir serves as a focal point for both locals and tourists visiting the Zahir Mosque. The square offers a spacious and well-maintained area with paved walkways, green spaces, and seating areas. It provides a place for people to relax, take in the view of the mosque, and appreciate the architectural beauty of the surrounding area.',
 );
