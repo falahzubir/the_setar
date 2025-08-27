@@ -133,7 +133,7 @@ class DetailsPage extends StatelessWidget {
                             Share.share(userData.link);
                           },
                           style: ButtonStyle(
-                            backgroundColor: MaterialStatePropertyAll(
+                            backgroundColor: WidgetStatePropertyAll(
                               CustomColors.primary,
                             ),
                           ),
